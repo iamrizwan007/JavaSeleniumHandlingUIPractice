@@ -1,0 +1,15 @@
+Download the selenium standalone server jar
+run command to make your system as hub
+	-java -jar selenium-server-standalone-3.141.59.jar -role hub
+Nodes should register at this hub ip address (you'll get in step 3 ip)
+
+login to machine where node is being registered
+	- Download the selenium standalone server jar in node machine as well
+	- run command to make your system as node and connect with hub
+		- java -Dwebdriver.chrome.driver="C:\\chromedriver.exe" -jar 
+		  selenium-server-standalone-3.141.59.jar -role webdriver -hub 
+		  ipaddress -port 5556
+		Note: java should be configured in node system with system variable setup
+		Note: ChromeDriver.exe should be placed 
+
+	
